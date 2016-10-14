@@ -9,7 +9,7 @@ Some example hardware that uses the WS2812 or WS2812B:
 * [30 LED - 1m strip](http://www.adafruit.com/products/1376)
 * [NeoPixel Stick](http://www.adafruit.com/products/1426)
 
-**To add this library to your project, add `#require "WS2812_IMP3.class.nut:1.0.0"` to the top of your device code.**
+**Library still under test, please copy and paste the `WS2812_IMP3.class.nut` file at the top of your device code **
 
 ## Hardware
 
@@ -36,8 +36,6 @@ pixels
 Instantiate the class with a pre-configured SPI object and the number of pixels that are connected. The SPI object must be configured at 90000kHz and have the *MSB_FIRST* flag set:
 
 ```squirrel
-#require "WS2812_IMP3.class.nut:1.0.0"
-
 // Configure the SPI bus
 spi <- hardware.spiLGDK
 spi.configure(MSB_FIRST, 9000);
@@ -57,8 +55,6 @@ Rather than pass a preconfigured SPI object to the constructor, you can pass an 
 **NOTE:** If you are using the *configure* method, you **must** pass `false` the the *draw* parameter of the constructor:
 
 ```squirrel
-#require "WS2812_IMP3.class.nut:1.0.0"
-
 // Create and configure an LED array with 8 pixels:
 pixels <- WS2812(hardware.spiLGDK, 8, false).configure();
 ```
