@@ -96,4 +96,4 @@ The *draw* method draws writes the current frame to the pixel array (see example
 
 ## License
 
-The WS2812 class is licensed under the [MIT License](https://github.com/electricimp/ws2812/tree/master/LICENSE).
+The WS2812 class is licensed under the [MIT License](/LICENSE).
