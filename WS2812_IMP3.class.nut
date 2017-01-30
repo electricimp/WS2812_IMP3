@@ -45,10 +45,10 @@ class WS2812_IMP3 {
         if (_bits[0] == null) {
             for (local i = 0; i < 256; i++) {
                 local valblob = blob(bytesPerColor);
-                valblob.writestring(getNumber((i /64) % 4));
-                valblob.writestring(getNumber((i /16) % 4));
-                valblob.writestring(getNumber((i /4) % 4));
-                valblob.writestring(getNumber(i % 4));
+                valblob.writestring(_getNumber((i /64) % 4));
+                valblob.writestring(_getNumber((i /16) % 4));
+                valblob.writestring(_getNumber((i /4) % 4));
+                valblob.writestring(_getNumber(i % 4));
                 _bits[i] = valblob;
             }
         }
