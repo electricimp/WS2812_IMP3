@@ -9,7 +9,9 @@ Some example hardware that uses the WS2812 or WS2812B:
 * [30 LED - 1m strip](http://www.adafruit.com/products/1376)
 * [NeoPixel Stick](http://www.adafruit.com/products/1426)
 
-**Library still under test, please copy and paste the `WS2812_IMP3.class.nut` file at the top of your device code **
+**Please copy and paste the `WS2812_IMP3.class.nut` file at the top of your device code **
+
+**Updated Library Release:** WS2812 v3.0.0 now supports imp003 and imp004m.  Please use [WS2812 Library](https://github.com/electricimp/WS2812).
 
 ## Hardware
 
